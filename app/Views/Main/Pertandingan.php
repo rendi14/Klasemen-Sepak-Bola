@@ -29,7 +29,7 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <select name="klubasatu" id="klubasatu" class="form-select w-56 h-10" aria-label="select example">
+                                            <select name="klubasatu" id="klubasatu" class="form-select w-52 h-10" aria-label="select example">
                                                 <option selected="" disabled="" value="">-- Pilih Klub 1 --</option>
                                                 <?php
                                                 foreach ($klub as $klubdata) : ?>
@@ -39,7 +39,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skora" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" placeholder="Skor Klub 1">
+                                            <input name="skora" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" placeholder="Skor Klub 1">
                                         </td>
 
                                         <td>
@@ -51,7 +51,7 @@
                                         </td>
 
                                         <td>
-                                            <select name="klubbsatu" id="klubbsatu" class="form-select w-56 h-10" aria-label="select example">
+                                            <select name="klubbsatu" id="klubbsatu" class="form-select w-52 h-10" aria-label="select example">
                                                 <option selected="" disabled="" value="">-- Pilih Klub 2 --</option>
 
                                                 <?php foreach ($klub as $klubdata) : ?>
@@ -61,7 +61,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skorb" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" placeholder="Skor Klub 2">
+                                            <input name="skorb" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" placeholder="Skor Klub 2">
 
                                         </td>
                                     </tr>
@@ -91,7 +91,7 @@
                                 <tbody id="tabel_tambah">
                                     <tr>
                                         <td>
-                                            <select name="kluba[]" class="form-select w-51 h-10" aria-label="select example">
+                                            <select name="kluba[]" class="form-select w-50 h-10" aria-label="select example">
                                                 <option selected="" disabled="" value="">-- Pilih Klub 1 --</option>
                                                 <?php
                                                 foreach ($klub as $klubdata) : ?>
@@ -101,7 +101,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skora[]" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" required placeholder="Skor Klub 1">
+                                            <input name="skora[]" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" required placeholder="Skor Klub 1">
                                         </td>
 
                                         <td>
@@ -113,7 +113,7 @@
                                         </td>
 
                                         <td>
-                                            <select name="klubb[]" class="form-select w-51 h-10" aria-label="select example">
+                                            <select name="klubb[]" class="form-select w-50 h-10" aria-label="select example">
                                                 <option selected="" disabled="" value="">-- Pilih Klub 2 --</option>
 
                                                 <?php foreach ($klub as $klubdata) : ?>
@@ -123,7 +123,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skorb[]" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" required placeholder="Skor Klub 2">
+                                            <input name="skorb[]" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" required placeholder="Skor Klub 2">
 
                                         </td>
 
@@ -226,7 +226,7 @@
             $('#tabel_tambah').append(
                 `<tr>
                                         <td>
-                                            <select name="kluba[]" class="form-select w-51 h-10" aria-label="select example">
+                                            <select name="kluba[]" class="form-select w-50 h-10" aria-label="select example">
                                                 <option value="">Pilih Klub ` + ((++jumlah * 2) - 1) + `</option>
                                                 <?php
                                                 foreach ($klub as $klubdata) : ?>
@@ -236,7 +236,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skora[]" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" placeholder="Skor Klub ` + ((++jumlahskora * 2) - 1) + `">
+                                            <input name="skora[]" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" placeholder="Skor Klub ` + ((++jumlahskora * 2) - 1) + `">
                                         </td>
 
                                         <td>
@@ -248,7 +248,7 @@
                                         </td>
 
                                         <td>
-                                            <select name="klubb[]" class="form-select w-51 h-10" aria-label="select example">
+                                            <select name="klubb[]" class="form-select w-50 h-10" aria-label="select example">
                                                 <option value="">Pilih Klub ` + ((++jumlahklubb * 2) - 2) + `</option>
                                                 <?php foreach ($klub as $klubdata) : ?>
                                                     <option value=<?= $klubdata['id']; ?>><?= $klubdata['Nama_klub']; ?></option>
@@ -257,7 +257,7 @@
                                         </td>
 
                                         <td>
-                                            <input name="skorb[]" id="modal-form-3" type="text" class="form-control-noborder w-20 h-6" placeholder="Skor Klub ` + ((++jumlahskorb * 2) - 2) + `">
+                                            <input name="skorb[]" id="modal-form-3" type="number" class="form-control-noborder w-24 h-6" placeholder="Skor Klub ` + ((++jumlahskorb * 2) - 2) + `">
                                         </td>
 
                                     <td>
