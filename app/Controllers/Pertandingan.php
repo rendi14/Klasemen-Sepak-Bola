@@ -11,9 +11,11 @@ class Pertandingan extends BaseController
     public function index()
     {
         $modelklubsepakbola = new Modelklub();
+        $modelpertandingansepakbola = new Modelpertandingan();
         $data = [
             'title' => "Klub",
             'klub' => $modelklubsepakbola->findAll(),
+            'pertandingan' =>  $modelpertandingansepakbola->getAll(),
         ];
         return view('Main/Pertandingan', $data);
     }
